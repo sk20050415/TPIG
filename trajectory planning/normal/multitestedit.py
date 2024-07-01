@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# 单行抓取（此操作实现了单行的抓取，但未用到camera）
+# 单行抓取（此操作实现了单行的抓取，但未实现移动的操作，也并未用到camera，属于测试的代码）
 
 import time
 import argparse
