@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+#提供了对四元数到欧拉角的转换、列表到字符串的转换以及从状态列表中解析特定状态值的功能
 """utility.py
 
 Utility methods.
