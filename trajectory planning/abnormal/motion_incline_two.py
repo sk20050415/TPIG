@@ -67,14 +67,14 @@ def demo_motion_gen(begin_q=None, target_position=None, target_orientation=None)
     # 使用标准库
     PLOT = False  # 是否绘制轨迹
     js = False  # 是否使用关节空间规划
-    tensor_args = TensorDeviceType()  # 设备类型配置，例如CPU或GPU
+    tensor_args = TensorDeviceType()  # 设备类型配置
     world_file = "virtual_test.yml"  # 世界配置文件
     robot_file = "flexiv_plus_de.yml"  # 机器人配置文件
     motion_gen_config = MotionGenConfig.load_from_robot_config(
         robot_file,
         world_file,
         tensor_args,
-        interpolation_dt=0.01,  # 插值时间步长
+        interpolation_dt=0.01,
     )
 
     motion_gen = MotionGen(motion_gen_config)  # 初始化运动规划器
